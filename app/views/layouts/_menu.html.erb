@@ -1,0 +1,17 @@
+<div class="pure-u" id="menu">
+	<div class="pure-menu pure-menu-open">
+		<ul>
+			<li><a href="/dashboards">Dashboard</a></li>
+			<li><a href="/policies">Policy</a></li>
+			<li><a href="#">Control Standards</a></li>
+			<li><a href="/businessunits">Business Units</a></li>
+			<li><a href="#">Groups</a></li>
+			<li><a href="#">Admin</a></li>
+			<li><% if user_signed_in? %>
+				<!-- Signed in as <%= current_user.email %>. Not you? -->
+				<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+				<% end %></li>
+				
+			</ul>
+		</div>
+	</div>
