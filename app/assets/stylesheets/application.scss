@@ -15,9 +15,6 @@
 */
 @import "bootstrap";
 body { padding-top: 60px; }
-@import "bootstrap-responsive";
-
-
 body
 {
 /*background-color: #91AA9D;*/
@@ -25,6 +22,7 @@ font-family: "proxima-nova",sans-serif;
 }
 #header
 {
+
 background-color: #5B8DA6;
 height: 100px;
 margin-top: -60px;
@@ -34,7 +32,7 @@ padding: 0;
 background-color: #5B8DA6;
 height: 100px;
 margin-bottom: -20px;
-padding: 0;	
+padding: 0;        
 }
 #main-wrap
 {
@@ -42,40 +40,35 @@ overflow: hidden;
 }
 #sidebar
 {
-/*background-color: #599EA5; */
 float: left;
 width: 200px;
 height: 100%;
 }
-#content-wrap 
+#content-wrap
 {
+background-color: azure;
 float: right;
 width: 1100px;
-height: 100%;
+height: 1100px;
 }
 #main-wrap > div
 {
 min-height: 450px;
 }
-.submit {  
-width: auto;  
-padding: 9px 15px;  
-background: #617798;  
-border: 0;  
-font-size: 14px;  
-color: #FFFFFF;  
-} 
-
+.submit {
+width: auto;
+padding: 9px 15px;
+background: #617798;
+border: 0;
+font-size: 14px;
+color: #FFFFFF;
+}
 #menu {
     margin-left: -150px;
     width: 200px;
     position: fixed;
     top: 110px;
     left: 150px;
-    bottom: 0px;
-    z-index: 1000;
-    background: none repeat scroll 0% 0%;
-    overflow-y: auto;
 }
 #menu, .pure-menu-link {
     transition: all 0.2s ease-out 0s;
@@ -94,10 +87,10 @@ color: #FFFFFF;
     background: none repeat scroll 0% 0% #55cee6;
 }
 /* #menu .pure-menu ul, #menu .pure-menu .menu-item-divided {
-    border-top: 1px solid #55cee6;
-    border-left: 1px solid #55cee6;
-    border-right: 1px solid #55cee6;
-    border-bottom: 1px solid #55cee6;
+border-top: 1px solid #55cee6;
+border-left: 1px solid #55cee6;
+border-right: 1px solid #55cee6;
+border-bottom: 1px solid #55cee6;
 } */
 .pure-menu ul {
     list-style: none outside none;
@@ -107,7 +100,7 @@ color: #FFFFFF;
     left: 0px;
 }
 textarea {
-	width: 588px; height: 123px;
+        width: 588px; height: 123px;
 }
 .pure-button.pure-button-primary
 {
@@ -162,21 +155,19 @@ margin-right: auto;
 background: #55cee6;
 }
 
-/*  Form Styling */
+/* Form Styling */
 
-.submit {  
-width: auto;  
-padding: 9px 15px;  
-background: #617798;  
-border: 0;  
-font-size: 14px;  
-color: #FFFFFF;  
-} 
-
-
+.submit {
+width: auto;
+padding: 9px 15px;
+background: #617798;
+border: 0;
+font-size: 14px;
+color: #FFFFFF;
+}
 
 #error_explanation {
- /*  width: 400px; */
+ /* width: 400px; */
   /* border: 2px solid #55cee6; */
   padding: 7px;
   padding-bottom: 12px;
@@ -189,7 +180,7 @@ color: #FFFFFF;
   padding: 5px 5px 5px 15px;
   font-size: 12px;
   margin: -7px;
-/*  background-color: #55cee6; */
+/* background-color: #55cee6; */
   color: #55cee6;
 }
 
@@ -202,4 +193,15 @@ color: #FFFFFF;
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+.chart {
+margin-left: 25px;
+letter-spacing: normal;
+font-size:20px;
+font-weight: bold;
+height: 500px;
+width: 500px;
+font-family: "proxima-nova",sans-serif;
+font-color: ''
 }

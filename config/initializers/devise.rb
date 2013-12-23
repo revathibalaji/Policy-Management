@@ -5,9 +5,11 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
   config.mailer_sender = "nixers@fixrnix.in"
+  config.secret_key = '8e4077c3f61340e58d9aff07b89d90207e3625224b356e03e319b618793391d1ce44db34de82bd0304c74906af5fa7d252bf4420a1207477919c2989e192bfa8'
+
 
   # Configure the class responsible to send e-mails.
-   config.mailer = "Devise::Mailer"
+   #config.mailer = "Devise::Mailer"
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and

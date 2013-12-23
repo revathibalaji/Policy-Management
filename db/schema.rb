@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130926050444) do
+ActiveRecord::Schema.define(:version => 20131025072753) do
 
   create_table "businessunits", :force => true do |t|
     t.string   "b_name"
@@ -20,11 +20,19 @@ ActiveRecord::Schema.define(:version => 20130926050444) do
     t.string   "b_city"
     t.string   "b_state"
     t.string   "b_country"
+    t.string   "time_zone"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "dashboards", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "documents", :force => true do |t|
+    t.string   "title"
+    t.string   "location"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -35,7 +43,6 @@ ActiveRecord::Schema.define(:version => 20130926050444) do
     t.string   "p_scope"
     t.string   "p_objective"
     t.string   "p_description"
-    t.integer  "businessunit_id"
     t.integer  "user_id"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false

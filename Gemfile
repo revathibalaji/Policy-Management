@@ -13,6 +13,7 @@ gem 'paperclip'
 gem 'prawn'
 gem 'highcharts-rails'
 gem 'chartkick'
+gem 'font-awesome-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,8 +22,10 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
+  gem 'therubyracer', :platforms => :ruby
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
   gem 'uglifier', '>= 1.0.3'
 end
 

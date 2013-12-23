@@ -40,6 +40,7 @@ class PoliciesController < ApplicationController
   # GET /policies/1/edit
   def edit
     @policy = Policy.find(params[:id])
+    @businessunit = Businessunit.find(:all)
   end
 
   # POST /policies

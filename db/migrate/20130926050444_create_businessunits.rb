@@ -7,7 +7,7 @@ class CreateBusinessunits < ActiveRecord::Migration
       t.string :b_city
       t.string :b_state
       t.string :b_country
-
+      t.string :time_zone
       t.timestamps
     end
   end
